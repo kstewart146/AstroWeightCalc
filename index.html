@@ -1,12 +1,82 @@
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+<style>
+h1 {
+    font-size: 50px;
+    font-family: Rowdies;
+    text-align: center;
+
+  }
+    .thin-black-border {
+      border-color: black;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50px;
+    }
+    button {
+      color:rgb(214, 37, 37);
+      font-size: 20px; 
+      text-align: center;
+      font-family: Rowdies;
+    }
+    body {
+      background-color:pink;
+      text-align: center;
+    }
+    p {
+      font-size: 15px;
+      font-family: Rowdies;
+    }
+     .userWeight {
+      font-size: 0.25in; 
+      color:rgb(214, 37, 37);
+      border-color:black;
+      border-width: 5px;
+      border-style:double;
+      border-radius:0mm;
+      font-family: Rowdies;
+    }
+    .select {
+      font-size: 0.25in;
+      color: rgb(214, 37, 37);
+      border-color:black;
+      border-width: 5px;
+      border-style:double;
+      border-radius:0mm;
+      font-family: Rowdies;
+    }
+    script {
+      color:rgb(214, 37, 37);
+    }
+    .container { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+  
+
+
+
+
+  </style>
+
+
 <!DOCTYPE html>
 <html>
   <head>
+    <h1 style="color:rgb(214, 37, 37); font-family: Rowdies;">I AM AN ASTRO WEIGHT CALCULATOR!</h1>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
   </head>
-  <body>
-     <!-- Write your markup here  -->
-
-    <script src="main.js" charset="utf-8"></script>
-  </body>
+  <div class="container">
+    <input id="user-weight" type="text" class="userWeight" placeholder="Weight (lbs)">
+    <select id="planets" class="select"></select>
+  </div>
+    <p id="output" class=".p"></p>
+    <button id="calculate-button" class="thin-black-border" class="button" onClick="handleClickEvent()">Calculate!</button>
+    <script src="main.js" class="script" charset="utf-8"></script>
+    <body>
+    <script id="main.js" charset="utf-8"></script>
+    </body>
 </html>
